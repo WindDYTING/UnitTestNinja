@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTestNinja", "MyTestNinja\MyTestNinja.csproj", "{2757E582-9E27-4B12-9699-EB3574DD43B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2757E582-9E27-4B12-9699-EB3574DD43B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2757E582-9E27-4B12-9699-EB3574DD43B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2757E582-9E27-4B12-9699-EB3574DD43B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2757E582-9E27-4B12-9699-EB3574DD43B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B4D66D7-C093-429D-B220-AB721CC4B0D3}
+	EndGlobalSection
+EndGlobal
