@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace MyTestNinja.Mocking
+namespace MyTestNinja.Difficulty
 {
     public class SecuritiesServiceSample
     {

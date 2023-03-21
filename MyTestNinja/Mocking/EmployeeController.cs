@@ -1,4 +1,6 @@
-﻿namespace MyTestNinja.Mocking
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace MyTestNinja.Mocking
 {
     public class EmployeeController
     {

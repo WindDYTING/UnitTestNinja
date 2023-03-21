@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace MyTestNinja.Mocking
 {
@@ -41,8 +44,12 @@ namespace MyTestNinja.Mocking
         public bool IsProcessed { get; set; }
     }
 
-    public class VideoContext : DbContext
+    public class VideoContext : DbContext, IDisposable
     {
         public DbSet<Video> Videos { get; set; }
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
