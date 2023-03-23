@@ -44,7 +44,7 @@ namespace MyTestNinja.Mocking
         public bool IsProcessed { get; set; }
     }
 
-    public class VideoContext : DbContext, IDisposable
+    public class VideoContext : IDisposable
     {
         public DbSet<Video> Videos { get; set; }
         public void Dispose()
