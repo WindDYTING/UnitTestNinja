@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Threading.Tasks;
 
 namespace MyTestNinja.Difficulty
 {
-    public class SecuritiesServiceSample
+    public class SecuritiesServiceSample : Form
     {
-        private PocketUser _user;
+        private Buttom _btnEnterOrder;
+        private readonly PocketUser _user;
 
         public OrderStatusPackets OrderStatus { get; set; }
         public OrderUpdateResult OrderUpdate { get; set; }
@@ -14,9 +16,17 @@ namespace MyTestNinja.Difficulty
 
         public SecuritiesServiceSample()
         {
+            InitializeComponents();
+
             _user = new PocketUser();
             _user.OnReceivedOrderUpdate += OnReceivedOrderUpdate;
             _user.OnReceivedTradeUpdate += OnReceivedTradeUpdate;
+        }
+
+        private void InitializeComponents()
+        {
+            _btnEnterOrder = new Buttom();
+            _btnEnterOrder.Clicked += OnButtonClick;
         }
 
         private void OnReceivedTradeUpdate(TradeUpdateResult ret)
@@ -93,5 +103,28 @@ namespace MyTestNinja.Difficulty
     public interface ISecuritiesConnection
     {
     }
-    
+
+    public class Form : IComponent
+    {
+        public void Dispose()
+        {
+            
+        }
+
+        public ISite Site { get; set; }
+        public event EventHandler Disposed;
+    }
+
+    public class Buttom : IComponent
+    {
+        public void Dispose()
+        {
+            
+        }
+
+        public event EventHandler Clicked;
+
+        public ISite Site { get; set; }
+        public event EventHandler Disposed;
+    }
 }
