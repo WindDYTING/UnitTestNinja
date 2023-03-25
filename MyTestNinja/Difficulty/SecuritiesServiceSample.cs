@@ -39,7 +39,7 @@ namespace MyTestNinja.Difficulty
             OrderUpdate = ret;
         }
 
-        // by button trigger
+        // by button trigger，如果我想測試按鈕按下去的行為怎辦呢？
         private async void OnButtonClick(object sender, EventArgs e)
         {
             OrderStatus = await _user.EnterOrderAsync("2330", 1, 1);
