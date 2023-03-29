@@ -121,6 +121,13 @@
   * Mocking：可能需要使用到假物件，並可能要做點重構才能測試。
   * Difficulty：這我自己加上的 XDD。
   
+  ## Getting Started
+  1. 將專案 clone 下來。
+  2. 在方案下新建單元測試專案(NUnit, XUnit 等皆可，看您喜好)
+  3. 開始撰寫單元測試 !
+  > 注意單元測試的目錄需要與專案目錄一致。
+  
+  
   ## 傳送門
   * [unit test ninja](https://github.com/WindDYTING/UnitTestNinja.git)
   
